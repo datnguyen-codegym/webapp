@@ -9,7 +9,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(urlPatterns = "/life")
+@WebServlet("/life")
 public class ServletLifeCircle extends HttpServlet {
 
     public ServletLifeCircle() {
