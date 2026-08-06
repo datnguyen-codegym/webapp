@@ -1,4 +1,4 @@
-package servlet.customer;
+package customer.model.entity;
 
 import java.sql.Date;
 

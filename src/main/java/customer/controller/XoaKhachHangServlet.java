@@ -1,6 +1,6 @@
-package servlet.customer;
+package customer.controller;
 
-import servlet.customer.KhachHangDAO;
+import customer.repository.KhachHangDAO;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;

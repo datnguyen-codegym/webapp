@@ -1,12 +1,12 @@
-package servlet.customer;
+package customer.controller;
 
-import servlet.customer.KhachHangDAO;
+import customer.model.entity.KhachHang;
+import customer.repository.KhachHangDAO;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import servlet.customer.KhachHang;
 
 import java.io.IOException;
 import java.sql.Date;

@@ -1,4 +1,4 @@
-package servlet.customer;
+package customer.controller;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

@@ -1,7 +1,7 @@
-package servlet.customer;
+package customer.repository;
 
-import servlet.customer.KetNoiCSDL;
-import servlet.customer.KhachHang;
+import config.KetNoiCSDL;
+import customer.model.entity.KhachHang;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
