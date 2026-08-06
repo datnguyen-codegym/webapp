@@ -17,13 +17,15 @@ public class OrderListServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request,
                          HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html");
-
-        PrintWriter writer = response.getWriter();
-
-        writer.println("Order List Servlet");
-
-        writer.close();
+//        response.setContentType("text/html");
+//
+//        PrintWriter writer = response.getWriter();
+//
+//        writer.println("Order List Servlet");
+//
+//        writer.close();
+        request.getRequestDispatcher("/view/order/list-order.jsp")
+                .forward(request, response);
 
     }
 }

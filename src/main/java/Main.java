@@ -23,7 +23,6 @@ public class Main {
         context.addServletMappingDecoded("/life", "lifeServlet");
 
         Tomcat.addServlet(context, "orderCreateServlet", new OrderCreateServlet());
-
         context.addServletMappingDecoded("/orders/create", "orderCreateServlet");
 
         Tomcat.addServlet(context, "orderListServlet", new OrderListServlet());
