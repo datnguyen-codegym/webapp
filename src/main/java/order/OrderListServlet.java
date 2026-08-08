@@ -5,25 +5,26 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import model.Order;
+import service.OrderService;
 
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 
 @WebServlet("/orders")
 public class OrderListServlet extends HttpServlet {
+    private final OrderService orderService =
+            new OrderService();
 
     @Override
     protected void doGet(HttpServletRequest request,
                          HttpServletResponse response)
             throws ServletException, IOException {
-//        response.setContentType("text/html");
-//
-//        PrintWriter writer = response.getWriter();
-//
-//        writer.println("Order List Servlet");
-//
-//        writer.close();
+
+//        List<Order> orders = orderService.findAll();
+//        request.setAttribute("orders", orders);
         request.getRequestDispatcher("/view/order/list-order.jsp")
                 .forward(request, response);
 
