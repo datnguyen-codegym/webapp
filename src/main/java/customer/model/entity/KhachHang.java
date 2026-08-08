@@ -2,10 +2,14 @@ package customer.model.entity;
 
 import java.sql.Date;
 
+@Table("KHACH_HANG")
 public class KhachHang {
 
+    @Collumn("id")
     private int maKhachHang;
+    @Collumn("HO_TEN")
     private String hoTen;
+    @Collumn("id")
     private String gioiTinh;
     private Date ngaySinh;
     private String soDienThoai;
